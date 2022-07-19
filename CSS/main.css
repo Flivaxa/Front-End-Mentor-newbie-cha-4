@@ -1,0 +1,155 @@
+/* Start Variables */
+:root {
+    --Primary-Pale-blue: hsl(225, 100%, 94%);
+    --Primaty-Bright-blue: hsl(245, 75%, 52%);
+    --Neutrial-Very-pale-blue: hsl(225, 100%, 98%);
+    --Neutrial-Desaturated-blue: hsl(224, 23%, 55%);
+    --Neutrial-Dark-blue: hsl(223, 47%, 23%);
+    --Neutrial-active-state: #766cf1;
+}
+/* End Variables */
+
+/* Start Global Rules */
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+.container {
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* End Global Rules */
+
+body {
+    margin: 0;
+    background-color: var(--Primary-Pale-blue);
+}
+main {
+    position: relative;
+}
+main > img {
+    position: absolute;
+    top: -80px;
+    z-index: -1;
+    width: 100%;
+}
+main > .desktop {
+    display: none;
+}
+@media (min-width: 768px) {
+    main > .mobile {
+        display: none;
+    }
+    main > .desktop {
+        display: block;
+    }
+}
+.container  {
+    max-width: 375px;
+}
+.container .summary {
+    background-color: white;
+    margin-top: 80px;
+    border-radius: 15px;
+}
+.container .summary > img {
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+.container .summary .content {
+    padding: 30px 25px;
+    text-align: center;
+}
+.container .summary .content h1 {
+    margin-top: 0;
+    font-size: 1.6rem;
+    font-weight: 900;
+    color: var(--Neutrial-Dark-blue);
+}
+.container .summary .content p {
+    color: var(--Neutrial-Desaturated-blue);
+    line-height: 1.7;
+}
+.container .summary .content .price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color:var(--Neutrial-Very-pale-blue);
+    border-radius: 15px;
+    margin: 25px 0;
+}
+.container .summary .content .price > div {
+    display: flex;
+    align-items: center;
+    
+}
+.container .summary .content .price > div img {
+
+}
+.container .summary .content .price > div .plan {
+    margin-left: 15px;
+}
+.container .summary .content .price > div .plan span:first-child {
+    display: block;
+    margin-bottom: 2px;
+    color: var(--Neutrial-Dark-blue);
+    font-weight: 900;
+}
+.container .summary .content .price > div .plan span:last-child {
+    color: var(--Neutrial-Desaturated-blue);
+}
+.container .summary .content .price a {
+    color: var(--Primaty-Bright-blue);
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+.container .summary .content .price a:hover {
+    color: var(--Neutrial-active-state);
+    text-decoration: none;
+}
+.container .summary .content a.pay {
+    display: block;
+    background-color: var(--Primaty-Bright-blue);
+    color: var(--Neutrial-Very-pale-blue);
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: 700;
+    box-shadow: 0px 20px 12px var(--Primary-Pale-blue);
+}
+.container .summary .content a.pay:hover {
+    background-color: var(--Neutrial-active-state);
+}
+.container .summary .content a.cancel {
+    display: block;
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--Neutrial-Desaturated-blue);
+    margin-top: 25px;
+}
+.container .summary .content a.cancel:hover {
+    color: var(--Neutrial-Dark-blue);
+}

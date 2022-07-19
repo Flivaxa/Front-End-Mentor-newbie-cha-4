@@ -67,7 +67,7 @@ main > .desktop {
     }
 }
 .container  {
-    max-width: 375px;
+    max-width: 420px;
 }
 .container .summary {
     background-color: white;
@@ -96,7 +96,7 @@ main > .desktop {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 20px;
     background-color:var(--Neutrial-Very-pale-blue);
     border-radius: 15px;
     margin: 25px 0;
@@ -105,9 +105,6 @@ main > .desktop {
     display: flex;
     align-items: center;
     
-}
-.container .summary .content .price > div img {
-
 }
 .container .summary .content .price > div .plan {
     margin-left: 15px;
